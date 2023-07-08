@@ -1,5 +1,4 @@
 package org.overmods.selenium.testsuite;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Main {
@@ -13,6 +12,7 @@ public class Main {
         //om.signup("test3", "test3@test.org", "test3");
         om.navigateGame("Minecraft");
         om.navigateMod("test Mod");
-        om.setRating(3);
+        //om.setRating(3);
+        om.writeComment("Selenium test");
     }
 }

@@ -71,4 +71,12 @@ public class OverMods {
         WebElement labelStar = waitFor(By.xpath(String.format("//label[@for='star%d']", 5-rating+1)));
         labelStar.click();
     }
+
+    public void writeComment(String comment) {
+        WebElement textareaComment = waitFor(By.xpath("//textarea[@id='overmodsCommentArea']"));
+        WebElement submit = waitFor(By.xpath("//button[@type='submit' and text()='Post']"));
+
+        textareaComment.sendKeys(comment);
+        submit.click();
+    }
 }
