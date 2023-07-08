@@ -9,9 +9,10 @@ public class Main {
         OverMods om = new OverMods(new ChromeDriver());
 
         om.open();
-        //om.login("test", "test");
+        om.login("test", "test");
         //om.signup("test3", "test3@test.org", "test3");
         om.navigateGame("Minecraft");
         om.navigateMod("test Mod");
+        om.setRating(3);
     }
 }

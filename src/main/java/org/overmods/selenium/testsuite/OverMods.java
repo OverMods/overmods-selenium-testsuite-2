@@ -66,4 +66,9 @@ public class OverMods {
         WebElement h3Title = waitFor(By.xpath(String.format("//h3[text()='%s']", title)));
         h3Title.click();
     }
+
+    public void setRating(int rating) {
+        WebElement labelStar = waitFor(By.xpath(String.format("//label[@for='star%d']", 5-rating+1)));
+        labelStar.click();
+    }
 }
