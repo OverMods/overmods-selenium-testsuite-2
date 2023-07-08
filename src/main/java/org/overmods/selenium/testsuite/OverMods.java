@@ -79,4 +79,9 @@ public class OverMods {
         textareaComment.sendKeys(comment);
         submit.click();
     }
+
+    public void download() {
+        WebElement buttonDownload = waitFor(By.xpath("//button[@class='download']"));
+        buttonDownload.click();
+    }
 }

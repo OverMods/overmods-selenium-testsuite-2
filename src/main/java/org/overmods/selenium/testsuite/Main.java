@@ -13,6 +13,7 @@ public class Main {
         om.navigateGame("Minecraft");
         om.navigateMod("test Mod");
         //om.setRating(3);
-        om.writeComment("Selenium test");
+        //om.writeComment("Selenium test");
+        //om.download();
     }
 }
