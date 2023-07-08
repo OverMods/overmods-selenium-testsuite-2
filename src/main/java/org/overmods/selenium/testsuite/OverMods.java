@@ -61,4 +61,9 @@ public class OverMods {
         WebElement pGame = waitFor(By.xpath(String.format("//p[@game='%s']", title)));
         pGame.click();
     }
+
+    public void navigateMod(String title) {
+        WebElement h3Title = waitFor(By.xpath(String.format("//h3[text()='%s']", title)));
+        h3Title.click();
+    }
 }
