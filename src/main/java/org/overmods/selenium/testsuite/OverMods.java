@@ -56,4 +56,9 @@ public class OverMods {
         inputConfirm.sendKeys(pass);
         //submit.click();
     }
+
+    public void navigateGame(String title) {
+        WebElement pGame = waitFor(By.xpath(String.format("//p[@game='%s']", title)));
+        pGame.click();
+    }
 }

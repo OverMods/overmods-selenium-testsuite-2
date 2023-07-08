@@ -10,6 +10,7 @@ public class Main {
 
         om.open();
         //om.login("test", "test");
-        om.signup("test3", "test3@test.org", "test3");
+        //om.signup("test3", "test3@test.org", "test3");
+        om.navigateGame("Minecraft");
     }
 }
