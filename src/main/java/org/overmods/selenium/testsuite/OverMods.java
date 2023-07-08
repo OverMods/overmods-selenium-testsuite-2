@@ -84,4 +84,13 @@ public class OverMods {
         WebElement buttonDownload = waitFor(By.xpath("//button[@class='download']"));
         buttonDownload.click();
     }
+
+    public void profile() {
+        waitFor(By.xpath("//img[@class='profile_icon']")).click();
+    }
+
+    public void updateEmail(String currentEmail, String newEmail) {
+        waitFor(By.xpath("//div[@class='container'][2]")).click();
+        ////*[@id="app"]/div[3]/div[1]/div[2]/div[3]/div[3]/div[1]/div/span[2]
+    }
 }

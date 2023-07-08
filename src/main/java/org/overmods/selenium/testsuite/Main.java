@@ -10,10 +10,12 @@ public class Main {
         om.open();
         om.login("test", "test");
         //om.signup("test3", "test3@test.org", "test3");
-        om.navigateGame("Minecraft");
-        om.navigateMod("test Mod");
+        //om.navigateGame("Minecraft");
+        //om.navigateMod("test Mod");
         //om.setRating(3);
         //om.writeComment("Selenium test");
         //om.download();
+        om.profile();
+        om.updateEmail("test@test.org", "newTest@test.org");
     }
 }
